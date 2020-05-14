@@ -12,12 +12,12 @@ namespace WebApiNfe.Controllers
 {
     public class CorretorasController : ControllerBase
     {
-        private readonly BCorretora _bCorretora;
+        private readonly IBCorretora _bCorretora;
 
         /// <summary>
         /// Construtor        
         /// </summary>
-        public CorretorasController(BCorretora bCorretora)
+        public CorretorasController(IBCorretora bCorretora)
         {
             _bCorretora = bCorretora;
         }

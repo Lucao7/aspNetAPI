@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29911.84
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{29DE9C4B-85AD-49CF-B9CC-18C2FE9C279D}"
 EndProject
@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resource", "Resource\Resour
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{3973D13F-FBB7-4A7D-BB6F-D95AF6FCFDD0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiNfe", "WebApiNfe\WebApiNfe.csproj", "{78BE4F07-B0B3-4004-8891-B7BD080A8505}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiCorretoras", "WebApiNfe\WebApiCorretoras.csproj", "{78BE4F07-B0B3-4004-8891-B7BD080A8505}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

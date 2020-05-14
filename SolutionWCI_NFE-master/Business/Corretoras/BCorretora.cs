@@ -9,17 +9,18 @@ using System.Text;
 
 namespace Business.Corretoras
 {
-    public class BCorretora : BRepository<Corretora>
+    public class BCorretora : BRepository<Corretora>, IBCorretora
     {
         public BCorretora(SolutionContext context)
             : base(new RCorretora(context))
         {
 
         }
+    }
 
-        public interface IBCorretora : IRepository<Corretora>
-        {
 
-        }
+    public interface IBCorretora : IRepository<Corretora>
+    {
+
     }
 }

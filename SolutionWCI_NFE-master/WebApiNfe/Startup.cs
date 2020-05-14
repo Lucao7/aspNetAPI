@@ -1,4 +1,5 @@
-﻿using Context;
+﻿using Business.Corretoras;
+using Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -38,17 +39,21 @@ namespace WebApiNfe
             services.AddDbContext<SolutionContext>(options =>
                options.UseSqlServer(settings.ConnectionString));
 
+            // Common
+            services.AddScoped<IBCorretora, BCorretora>();
+            //services.AddScoped<IBPersonalInformation, BPersonalInformation>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
                     new Info
                     {
-                        Title = "API NFe - WCI",
+                        Title = "API Fator - Corretoras",
                         Version = "v1",
-                        Description = "API NFe - WCI criada com o ASP.NET Core",
+                        Description = "API Fator Corretoras - WCI criada com o ASP.NET Core 2.2",
                         Contact = new Contact
                         {
-                            Name = "Samuel Apolion Benevenuto",
+                            Name = "Lucas Ramos Silva",
                             Url = ""
                         }
                     });
@@ -78,7 +83,7 @@ namespace WebApiNfe
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json",
-                    "API NFe - WCI");
+                    "API Fator - Corretoras");
             });
         }
     }
